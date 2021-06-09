@@ -1,0 +1,20 @@
+import cv2
+import numpy
+pic01=cv2.imread('johnwick1.jpg')
+cv2.imshow("dx" ,pic01)
+cv2.waitKey()
+cv2.destroyAllWindows()
+image02=cv2.imread('prof.jpg')
+cv2.imshow("d2" ,image02)
+cv2.waitKey()
+cv2.destroyAllWindows()
+image02 = cv2.resize(image02, (600, 600)
+pic01 = cv2.resize(pic01, (600, 600))
+crop=image02[0:600,  120:800]
+cv2.imshow("pho5.jpg", crop)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+pic01[15:500,120:500],image02[15:500,120:500]=image02[15:500,120:500],pic01[15:500,120:500]
+cv2.imshow("pho.jpg", pic01)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
